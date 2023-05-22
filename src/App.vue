@@ -15,6 +15,5 @@ body{
 #app {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    padding: 5rem;
 }
 </style>

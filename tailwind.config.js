@@ -16,7 +16,8 @@ module.exports = {
                 },
             },
             fontFamily: {
-                'noto-sans': '"Noto sans"'
+                'inter': 'Inter',
+                'open-sans': '"Open Sans"'
             }
         },
     },
