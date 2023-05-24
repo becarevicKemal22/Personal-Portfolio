@@ -2,10 +2,10 @@
   <div class="px-6 lg:px-12 bg-background relative">
     <transition name="springup" appear>
       <div class="mt-20 lg:mt-52 pb-20 lg:pb-96">
-        <h1 class="font-inter text-3xl lg:text-8xl leading-snug lg:leading-snug">Hi 👋 <br>I'm <span
-            class="bg-gradient-to-r text-transparent bg-clip-text from-primary-light to-primary">Kemal Bećarević</span>,
+        <h1 class="first font-inter text-3xl lg:text-8xl leading-snug lg:leading-snug">Hi 👋
         </h1>
-        <h2 class="font-inter text-xl lg:text-5xl text-gray-100 font-semibold">an aspiring Full-Stack developer</h2>
+        <h1 class="second font-inter text-3xl lg:text-8xl">I'm <span class="bg-gradient-to-r text-transparent bg-clip-text from-primary-light to-primary">Kemal Bećarević</span>,</h1>
+        <h2 class="third font-inter text-xl lg:text-5xl text-gray-100 font-semibold">an aspiring Full-Stack developer</h2>
       </div>
     </transition>
   </div>
@@ -29,17 +29,30 @@ export default {
 
 <style scoped>
 .springup-enter-active,
-.springup-leave-active {
+.springup-enter-active .second,
+.springup-enter-active .third{
   transition: all 0.5s ease-out;
 }
 
+.springup-enter-active .second{
+  transition-delay: 250ms;
+}
+
+.springup-enter-active .third{
+  transition-delay: 500ms;
+}
+
 .springup-enter-from,
+.springup-enter-from .second,
+.springup-enter-from .third,
 .springup-leave-to {
   transform: translateY(50%);
   opacity: 0;
 }
 
 .springup-enter-to,
+.springup-enter-to .second,
+.springup-enter-to .third,
 .springup-leave-from {
   transform: translateY(0%);
   opacity: 1;
