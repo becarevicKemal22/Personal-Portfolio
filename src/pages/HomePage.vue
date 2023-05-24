@@ -28,18 +28,24 @@ export default {
 </script>
 
 <style scoped>
-.springup-enter-active,
-.springup-enter-active .second,
+.springup-enter-active {
+  transition: all 0.9s ease-out;
+}
+
+.springup-enter-active .second{
+  transition: all 0.7s ease-out;
+}
+
 .springup-enter-active .third{
   transition: all 0.5s ease-out;
 }
 
 .springup-enter-active .second{
-  transition-delay: 250ms;
+  transition-delay: 200ms;
 }
 
 .springup-enter-active .third{
-  transition-delay: 500ms;
+  transition-delay: 400ms;
 }
 
 .springup-enter-from,
