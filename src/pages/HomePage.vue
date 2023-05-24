@@ -16,7 +16,7 @@
       <p class="ml-1 lg:ml-2 mt-3 lg:mt-6 font-open-sans text-sm lg:text-2xl text-white max-w-4xl leading-loose lg:leading-10">Hey, I'm Kemal. I'm a high school student who is absolutely in love with all things programming. I have found full-stack programming to be very enjoyable and I really enjoy learning new technologies and frameworks. I'm also obsessed with green squares on GitHub.</p>
     </div>
   </div>
-  <img src="../assets/topWaves.svg" class="w-full" alt="">
+  <img src="../assets/transition-bottom.svg" class="w-full" alt="">
 
 </template>
 
