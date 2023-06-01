@@ -43,15 +43,22 @@
       </div>
     </div>
   </div>
+  <div class="px-8 lg:px-24 pt-8 lg:pt-16">
+    <h2 class="text-2xl lg:text-6xl font-bold font-noto-sans underline underline-offset-4 lg:underline-offset-8 decoration-primary decoration-4 lg:decoration-8">Projects</h2>
+    <div class="grid grid-cols-3 grid-rows-2 p-10">
+      <ProjectCard title="Weather App" description="Web application built with Javascript that allows users to get forecasts for their desired location."></ProjectCard>
+    </div>
+  </div>
 </template>
 
 <script>
 
 import SkillIcon from "@/components/UI/SkillIcon.vue";
+import ProjectCard from "@/components/UI/ProjectCard.vue";
 
 export default {
   name: "HomePage",
-  components: {SkillIcon},
+  components: {ProjectCard, SkillIcon},
 }
 </script>
 
